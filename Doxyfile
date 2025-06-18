@@ -1,0 +1,51 @@
+# Basic project info
+PROJECT_NAME           = "CTA MODEL FRAMEWORK"
+OUTPUT_DIRECTORY       = ./docs
+
+# Input files
+INPUT                  = /home/luis/Desktop/IntSys/
+FILE_PATTERNS          = *.py *.sh
+EXTENSION_MAPPING = sh=Python
+RECURSIVE              = NO  # Set to YES if you have subdirectories
+
+# Encoding and docstring parsing
+DOXYFILE_ENCODING      = UTF-8
+INPUT_ENCODING         = UTF-8
+PYTHON_DOCSTRING       = YES
+
+# Extract documentation
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PACKAGE        = YES
+BRIEF_MEMBER_DESC      = YES
+
+# File display
+SHOW_USED_FILES        = YES
+SHOW_FILES             = YES
+
+# HTML output
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+SEARCHENGINE           = YES
+GENERATE_TREEVIEW      = YES
+
+GENERATE_LATEX = YES
+USE_PDFLATEX = NO
+LATEX_CMD_NAME = pdflatex
+
+# Graphviz
+HAVE_DOT               = YES
+DOT_PATH               = /usr/bin/dot        # or wherever 'dot' is on your system
+DOT_GRAPH_MAX_NODES    = 50              # or higher if needed
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+DOT_MULTI_TARGETS      = YES
+
+# Error handling
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
